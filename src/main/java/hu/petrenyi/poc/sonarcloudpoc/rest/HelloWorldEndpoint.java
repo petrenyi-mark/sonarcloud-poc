@@ -18,7 +18,7 @@ public class HelloWorldEndpoint {
     @Produces("text/plain")
     public Response doGet() {
         if (true) {
-            List<String> strings = getStrings();
+            List<String> strings = DuplicatorUtil.getStrings();
             Map<String, String> stringmap = strings.stream().collect(Collectors.toMap(identity(), identity()));
             String value = stringmap.get("querty");
             String subs = value.substring(2, 4);
