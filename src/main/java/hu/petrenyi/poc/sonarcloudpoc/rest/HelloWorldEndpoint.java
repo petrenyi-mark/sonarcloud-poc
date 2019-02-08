@@ -28,7 +28,7 @@ public class HelloWorldEndpoint {
     }
 
     private List<String> getStrings() {
-        List<String> strings = new ArrayList<String>();
+        List<String> strings = new ArrayList<>();
         strings.add("100");
         strings.add("qwerty");
         strings.add("something");
